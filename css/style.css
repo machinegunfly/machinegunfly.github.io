@@ -1,0 +1,367 @@
+/*
+       _             ____        __                __
+      (_)___ _____  / __ \____  / /___ _________  / /__
+     / / __ `/ __ \/ /_/ / __ \/ / __ `/ ___/ _ \/ //_/
+    / / /_/ / / / / ____/ /_/ / / /_/ / /__/  __/ ,<
+ __/ /\__,_/_/ /_/_/    \____/_/\__,_/\___/\___/_/|_|
+/___/
+
+           © 2021 - Jan Polacek (neostetic)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color: 200; /* Default: 346 */
+    --main-color: hsl(var(--color), 90%, 50%);
+    --main-darker: hsl(var(--color), 90%, 27%);
+    --main-dark: #0D0D0D;
+    --main-light: white;
+}
+
+::-moz-selection {
+    color: var(--main-darker);
+    background: var(--main-dark);
+}
+
+::selection {
+    color: var(--main-darker);
+    background: var(--main-dark);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+}
+
+.header {
+    width: 100%;
+    padding: 10px;
+    height: 110px;
+    background: var(--main-color);
+}
+
+.header-left {
+    float: left;
+    font-size: 32px;
+    font-weight: 800;
+}
+.header-left > a > span {
+    position: relative;
+    padding: 10px;
+    top: -20px;
+    color: var(--main-light);
+    text-decoration: none;
+}
+
+.header-right {
+    float: right;
+    text-align: right;
+}
+
+.header-right > a {
+    top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--main-light);
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 6px;
+    background: var(--main-dark);
+    box-shadow: 0 4px 0 var(--main-darker);
+    position: relative;
+    transition: .2s cubic-bezier(0.38, 1.79, 0.98, 1.12);;
+}
+
+.header-right > a:hover {
+    top: 23px;
+    box-shadow: 0 1px 0 var(--main-darker);
+}
+
+#header-logo {
+    transition: .2s cubic-bezier(0.64, -0.5, 0.35, 1.54);
+}
+
+a:hover #header-logo {
+    position: relative;
+    transform: rotate(-15deg);
+}
+
+.logo-long1 {
+    position: relative;
+    top: -50px;
+    left: 211px;
+    width: 6px;
+    height: 1px;
+    background: var(--main-light);
+    transition: .2s ease-in-out;
+    border-radius: 10px;
+}
+
+a:hover .logo-long1 {
+    transform: scaleY(40);
+}
+
+.logo-long2 {
+    position: relative;
+    top: -30px;
+    left: 354px;
+    width: 6px;
+    height: 1px;
+    background: var(--main-light);
+    transition: .2s ease-in-out;
+    border-radius: 10px;
+}
+
+a:hover .logo-long2 {
+    transform: scaleY(40);
+}
+
+.content{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: var(--main-light);
+}
+
+.content-big {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 60px;
+    width: 100%;
+}
+
+.footer {
+    margin-top: 100px;
+    padding: 50px;
+    float: left;
+    width: 100%;
+    background: var(--main-light);
+}
+
+.footer b {
+    color: var(--main-color);
+}
+
+.footer a {
+    width: 98%;
+    float: left;
+    margin-top: 5px;
+    padding: 0;
+    text-decoration: none;
+    color: var(--main-dark);
+    transition: .2s cubic-bezier(0.38, 1.79, 0.98, 1.12);
+}
+
+.footer a:hover {
+    background: var(--main-dark);
+    color: var(--main-color);
+    padding-left: 10px;
+}
+
+.footer-end {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    margin-top: 60px;
+    font-weight: 500;
+    opacity: .7;
+    text-align: center;
+    cursor: not-allowed;
+}
+
+.button {
+    top: 0;
+    font-size: 24px;
+    padding: 10px 20px;
+    color: var(--main-light);
+    border-radius: 6px;
+    background: var(--main-dark);
+    box-shadow: 0 4px 0 var(--main-darker);
+    position: relative;
+    transition: .2s cubic-bezier(0.38, 1.79, 0.98, 1.12);;
+}
+
+.button:hover {
+    top: 3px;
+    box-shadow: 0 1px 0 var(--main-darker);
+}
+
+.window {
+    top: 0;
+    position: relative;
+    width: 800px;
+    margin: 20px auto;
+    border-radius: 20px;
+    background: #0D0D0D;
+    box-shadow: 0 15px 15px -5px rgba(0,0,0,.6);
+}
+
+.div-loader {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    perspective: 2000px;
+    transform: scale(1);
+    backdrop-filter: blur(3px);
+}
+
+.div-loader-icon {
+    animation: iconLoading 2s ease-in-out infinite;
+}
+
+.eyecare {
+    cursor: pointer;
+    padding: 15px;
+    font-size: 23px;
+    margin: 20px;
+    background: var(--main-light);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 5px 0 rgba(125,125,125,.7);
+    transition: .2s cubic-bezier(0.38, 1.79, 0.98, 1.12);
+}
+
+.eyecare:hover {
+    margin-bottom: 16px;
+    box-shadow: 0 1px 0 rgba(125,125,125,.7);
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.noselect, br {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.flex-center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fas {
+    transition: .2s;
+}
+
+.img-black {
+    filter: brightness(0);
+}
+
+.opacity-down {
+    opacity: .9;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.width33 {
+    width: 33.33%;
+    float: left;
+}
+
+.width-left {
+    width: 50%;
+}
+
+.width-right {
+    width: 50%;
+}
+
+.center {
+    text-align: center;
+}
+
+.inner {
+    padding: 10px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+@keyframes iconLoading {
+    0% {
+        transform: rotateY(0);
+    }
+    90%, 100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .inner {
+        width: 100%;
+    }
+    .logo-long1, .logo-long2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .inner {
+        flex-wrap: wrap;
+    }
+    .width-left, .width-right {
+        width: 100%;
+        text-align: center;
+    }
+    .header {
+        height: 183px;
+    }
+    .window {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .width33 {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .footer {
+        font-size: 22px;
+    }
+    .footer b {
+        padding: 0;
+    }
+    .footer a {
+        width: 100%;
+    }
+    .footer a:hover {
+        padding: 0;
+    }
+    .footer-end {
+        width: 100%;
+    }
+}
