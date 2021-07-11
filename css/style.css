@@ -12,7 +12,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --color: 200; /* Default: 346 */
+    --color: 346; /* Default: 346 */
     --main-color: hsl(var(--color), 90%, 50%);
     --main-darker: hsl(var(--color), 90%, 27%);
     --main-dark: #0D0D0D;
@@ -329,7 +329,7 @@ a:hover .logo-long2 {
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
     .inner {
         flex-wrap: wrap;
     }
