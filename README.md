@@ -1,7 +1,5 @@
 # Web Design Works - machinegunfly
 
-- Check out on https://machinegunfly.github.io
-
 ### Responsive Web Design
 
 - We are counting on Responsive Design for Mobile and any other Desktop Devices with minimum width of 300px
@@ -27,3 +25,5 @@
 - Simply change One Value
 
 <img src="https://i.imgur.com/RqCCtZe.png" width="100%"/>
+
+- Check out on https://machinegunfly.github.io
