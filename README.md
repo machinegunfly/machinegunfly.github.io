@@ -1,5 +1,3 @@
 # machinegunfly.github.io
 
-<p align="center">
-  <img src="https://i.imgur.com/tAphRE0.png" width="100%"/>
-</p>
+<img src="https://i.imgur.com/tAphRE0.png" width="49%"/> <img src="https://i.imgur.com/FDyc0zS.png" width="49%"/>
